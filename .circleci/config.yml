@@ -4,13 +4,12 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node@14.8.0
+      - image: circleci/nodejs:current
     steps:
       - checkout
-      - run: npm install
       - run: npm run build
 workflows:
-  version: 1
+  version: 2
   tsc_build:
     jobs:
       - build
