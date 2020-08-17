@@ -4,9 +4,10 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/nodejs:current
+      - image: cimg/node:9.9.0
     steps:
       - checkout
+      - run: npm install
       - run: npm run build
 workflows:
   version: 2
