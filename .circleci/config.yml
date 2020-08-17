@@ -1,7 +1,15 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+jobs:
+  build:
+    docker:
+      - image: circleci/nodejs:0.0.1
+    steps:
+      - checkout
+      - run: npm run build
 workflows:
-  node-tests:
+  version: 1
+  tsc_build:
     jobs:
-      - node/test
+      - build
