@@ -1,7 +1,10 @@
 import express from "express";
+import homepageRouter from './Routes/Homepage';
 
 const app = express();
 const port = 8080 || process.env.PORT;
+
+app.use('/homepage', homepageRouter);
 
 app.get("/", (req, res) => {
   res.send("Hi!");
