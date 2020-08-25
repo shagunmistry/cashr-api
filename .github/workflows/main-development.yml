@@ -25,10 +25,6 @@ jobs:
     # Runs install
     - name: Run install
       run: npm install
-
-    # Runs eslint
-    - name: Run eslint
-      run: npm run lint
     
     # Run build
     - name: Run build
