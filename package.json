@@ -4,9 +4,9 @@
   "description": "Just a practice node typescript api ",
   "main": "index.js",
   "scripts": {
+    "gcp-build": "tsc",
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "build": "tsc",
-    "prestart": "npm run build",
+    "prestart": "npm run gcp-build",
     "start:node": "node .",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint  \"src/**/*.(js|ts|json)\"",
