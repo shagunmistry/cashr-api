@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: npm run build
+      - run: npm run gcp-build
 workflows:
   version: 2
   tsc_build:
