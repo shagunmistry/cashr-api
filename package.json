@@ -9,6 +9,7 @@
     "prestart": "npm run build",
     "start:node": "node .",
     "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint  \"src/**/*.(js|ts|json)\"",
     "start": "ts-node-dev src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -18,28 +18,23 @@ homepageRouter.get('/', (req: Request, res: Response) => {
         pageSubtitle: 'The place where Social AI meets money pooling and money management',
         features: [
             {
-                title: 'Secure payments',
-                image: '',
-                details: 'We use first class AI-assisted security to secure your data and payment information.'
-            },
-            {
-                title: 'Secure sign up with Bank account',
-                image: '',
-                details: 'Sign up with your bank account to get your information pre-loaded and ready to go in less than 5 minutes!'
+                title: 'Cashr Security',
+                image: 'https://storage.googleapis.com/cashr-415.appspot.com/Assets/money-security.png',
+                details: 'We use first class AI-assisted fraud detection and AI-assisted monitoring to ensure your data is secure as you and your friends exchange money.'
             },
             {
                 title: 'Custom Debit Card',
-                image: '',
-                details: 'Use the pooled money with a custom Cashr Debit Card',
+                image: 'https://storage.googleapis.com/cashr-415.appspot.com/Assets/money-heart.png',
+                details: 'Use the collected money anywhere* with a custom Cashr Debit Card.',
             }, {
                 title: 'Cashr Groups',
-                image: '',
-                details: 'Organize your payment groups and social circles with Cashr groups'
+                image: 'https://storage.googleapis.com/cashr-415.appspot.com/Assets/groups-birthday.png',
+                details: 'Organize your payment groups and social circles with Cashr groups.'
             },
             {
-                title: 'AI-Assisted Financial analysis and tips',
-                image: '',
-                details: 'Stay finaically educated about your money with our AI assisted tips and account analysis for free!'
+                title: 'Account analysis and Personalized Financial Tips',
+                image: 'https://storage.googleapis.com/cashr-415.appspot.com/Assets/money-tips.png',
+                details: 'Stay finaically educated about your money with our AI-assisted tips and account analysis for free!'
             }
         ]
     }
