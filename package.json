@@ -16,7 +16,17 @@
   "author": "Shagun M",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.1.13",
+    "splaytree": "^3.0.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.6",
