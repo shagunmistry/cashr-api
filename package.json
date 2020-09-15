@@ -4,14 +4,14 @@
   "description": "API for Cashr.",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc",
     "gcp-build": "tsc",
+    "lint:fix": "eslint  \"src/**/*.(js|ts|json)\"",
+    "lint": "eslint --ignore-path .gitignore .",
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "prestart": "npm run tsc",
+    "start:dev": "ts-node-dev --respawn src/index.ts",
     "start:node": "node .",
-    "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint  \"src/**/*.(js|ts|json)\"",
-    "start": "ts-node-dev src/index.ts",
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shagun M",
