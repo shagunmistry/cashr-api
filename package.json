@@ -1,12 +1,13 @@
 {
   "name": "test-api",
   "version": "1.0.0",
-  "description": "Just a practice node typescript api ",
+  "description": "API for Cashr.",
   "main": "index.js",
   "scripts": {
+    "tsc": "tsc",
     "gcp-build": "tsc",
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "prestart": "npm run gcp-build",
+    "prestart": "npm run tsc",
     "start:node": "node .",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint  \"src/**/*.(js|ts|json)\"",
