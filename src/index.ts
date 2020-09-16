@@ -1,8 +1,20 @@
 import express from "express";
+import cors from 'cors';
+import bodyParser from 'body-parser';
+
 import homepageRouter from './Routes/Homepage';
+
 
 const app = express();
 const port = 8080 || process.env.PORT;
+
+app.use(cors())
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 
 app.use('/homepage', homepageRouter);
 
